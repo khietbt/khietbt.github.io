@@ -20,14 +20,15 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://khietbt.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: khietbt
-github_username:  khietbt
+github_username: khietbt
 
 # Build settings
 markdown: kramdown
 theme: minima
+remote_theme: streetturtle/jekyll-clean-dark
 plugins:
   - jekyll-feed
-
+  - jekyll-remote-theme
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
