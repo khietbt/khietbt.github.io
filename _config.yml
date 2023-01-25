@@ -15,12 +15,31 @@
 # in the templates via {{ site.myvariable }}.
 title: A wanderer
 email: khietbt@gmail.com
+name: Khiet Bui
 description: >- # this means to ignore newlines until "baseurl:"
-  A wanderer's songs
+  A developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://khietbt.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: khietbt
 github_username: khietbt
+author: Khiet Bui (khietbt)
+
+share:
+  facebook: true
+  twitter: true
+  gplus: true
+  linkedin: true
+  pinterest: true
+  email: true
+
+social:
+  github: khietbt
+  facebook: khietbt
+  email: khietbt@gmail.com
+  rss: feed.xml
+  linkedin: khietbt
+
+permalink: /:year/:month/:title/
 
 # Build settings
 markdown: kramdown
