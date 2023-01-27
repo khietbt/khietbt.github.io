@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "nvm, rbenv and sdkman"
+title:  "My favourite version managers"
 date:   2023-01-26 20:43:01 +0700
 categories: ruby java rbenv sdkman
 ---
