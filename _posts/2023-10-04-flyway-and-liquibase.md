@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flyway and Liquibase"
-date: 2023-10-02 11:43:01 +0700
+date: 2023-10-04 11:43:01 +0700
 categories: Flyway Liquibase
 ---
 
