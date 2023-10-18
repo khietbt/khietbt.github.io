@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Extracting RAR files with Java"
+title: "Extract RAR files with Java"
 date: 2023-10-04 11:43:01 +0700
 categories: Rar UnRar SevenZipLibJBinding
 ---
