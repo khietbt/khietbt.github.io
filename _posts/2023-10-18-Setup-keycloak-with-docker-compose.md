@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Setup keycloak with docker-compose"
-date: 2023-10-04 11:43:01 +0700
+date: 2023-10-18 11:43:01 +0700
 categories: keycloak docker docker-compose
 ---
 
