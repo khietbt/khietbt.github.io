@@ -34,3 +34,6 @@ services:
     depends_on:
       - postgres
 ```
+
+Please take a look at [sesame-keycloak-service](git@github.com:khietbt/sesame-keycloak-service.git)
+which is ready to run with sample realms.
