@@ -17,6 +17,12 @@ variety of problems, but also a solid
 understanding in microservices, performance,
 and scalability.
 
+# Personal Info
+
+Tel: +84 0976800301
+Email: khietbt@gmail.com
+LinkedIn: https://www.linkedin.com/in/khietbt
+
 # Technical Skills
 
 * Backend: Java, C++, Spring, Maven
