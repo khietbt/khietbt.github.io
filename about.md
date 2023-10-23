@@ -12,8 +12,9 @@ A experienced software developer / architect in IT industry with strong ability
 in analyzing issues and providing appropriate solutions.
 
 After graduating in 2008 as a B.S of Computer Engineering in HUST, I had chances to join many
-projects in 4
-companies. Facing multiple problems brought me solid understanding in microservices, performance,
+projects in 4 companies and multiple projects which brought me not only chances to face & solve
+variety of problems, but also a solid
+understanding in microservices, performance,
 and scalability.
 
 # Technical Skills
