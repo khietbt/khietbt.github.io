@@ -20,8 +20,8 @@ and scalability.
 # Personal Info
 
 Tel: +84 0976800301
+
 Email: khietbt@gmail.com
-LinkedIn: https://www.linkedin.com/in/khietbt
 
 # Technical Skills
 
