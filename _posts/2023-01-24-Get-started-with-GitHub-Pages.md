@@ -8,6 +8,7 @@ categories: jekyll update
 It is a nice day to start a new place for everything which makes me mad.
 
 There are tons of tutorials to setup GitHub Pages & Jekyll, such as:
+
 * [GitHub Page](https://docs.github.com/en/pages)
 * [Jekyll Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
 
