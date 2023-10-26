@@ -8,53 +8,62 @@ permalink: /about/
 
 ![](me.jpg)
 
-A experienced software developer / architect in IT industry with strong ability
+Experienced software developer / architect in IT industry with a strong ability
 in analyzing issues and providing appropriate solutions.
 
-After graduating in 2008 as a B.S of Computer Engineering in HUST, I had chances to join many
-projects in 4 companies and multiple projects which brought me not only chances to face & solve
-variety of problems, but also a solid
-understanding in microservices, performance,
-and scalability.
+Graduated with a B.S. in Computer Engineering from Hanoi University of Science and Technology.
+Proficient in Java, C++, Spring, Maven, and various database technologies.
+Solid foundation in microservices, performance
+optimization, and scalability.
 
 # Personal Info
 
-Tel: +84 0976800301
-
-Email: khietbt@gmail.com
+* **Name:** Bui Thanh Khiet
+* **Tel:** +84 0976800301
+* **Email:** khietbt@gmail.com
 
 # Technical Skills
 
-* Backend: Java, C++, Spring, Maven
-* Database: MySQL, Postgres, Oracle
-* Tools: IntelliJ IDEA, Vim, Postman
+* **Backend:** Java, C++, Spring, Maven
+* **Database:** MySQL, Postgres, Oracle
+* **Tools:** IntelliJ IDEA, Vim, Postman
 
 # Work History
 
 ## **Jun 2020 - Oct 2023**
 
+Worked as a solution architect in LKO - A startup with eLearning products.
+
 ### ***Learning Management System***
 
-I joined the team and started building this system from scratch by applying Spring Cloud
-Microservices architecture.
+A group of systems supported teaching operations.
 
-I took roles of talking to BAs/stakeholders to clear requirements,
-then providing solutions, breaking solutions into small/simple tasks (which team meambers can
-follow), defining new processes.
-
-I was also in charge of analyzing logs, reports to detect and solve technical debts.
+My responsibilities:
+* Led the team to build this system from scratch by applying Spring Cloud Microservices architecture.
+* Collaborated with BAs/stakeholders to define requirements, provide solutions, and provide them into manageable tasks
+* Analyzed logs, reports to identify and solve technical debts.
 
 ## **Apr 2018 - Jun 2020**
 
+Worked as a solution architect in Topica - A startup providing eLearning products.
+
 ### ***Payment Service***
 
-It was my first time developing an application using Java / Spring Boot And ReactJs.
+It was an internal application to help BoD keep tracks of expenditures.
+
+My responsibilities:
+
+* Led a team building the app using Java / Spring Boot And ReactJs.
+* Provided solutions, reviewed source code...
 
 ### ***Edumall Data Warehouse***
 
 Edumall was a Topica's product and it had been using an external data warehouse.
 
-I rewrote this warehouse using Cloudera Eco system.
+My responsibilities:
+
+* Analyzed business requirements
+* Rewrote this warehouse using Cloudera Eco system.
 
 ## **Jul 2010 - Apr 2018**
 
@@ -63,27 +72,29 @@ from a senior developer to a solution architect.
 
 ### **Portfolio Management System (PMS)**
 
-PMS is a very big application with 300+ different modules to provide a perfect solution for managing
+PMS was a very big application with 300+ different modules to provide a perfect solution for managing
 portfolios. Its core parts receive transactions / prices / securities… from American / European /
-Australian finance markets to evaluate accounts. The team was in charge of maintaining PMS, and
+Australian financial markets to evaluate accounts. The team was in charge of maintaining PMS, and
 adding new features.
 
-As a production L2 / L3 support, my main task was facing critical issues, then providing hotfixes
-and/or permanent solutions. I restructured core parts to move data of this file-based system to
-Oracle DB. By generating tons of daily data, it brought me knowledge of designing DB, optimizing
-SQLs to reduce processing time from multiple hours to several minutes.
+My responsibilities:
+
+* Played as a production L2 / L3 support to face critical issues, and provide hotfixes
+  and/or permanent solutions.
+* Restructured core parts of PMS and moved move data of this file-based system to Oracle DB. By generating tons of daily
+  data, it brought me knowledge of designing DB, optimizing
+  SQLs to reduce processing time from multiple hours to several minutes.
 
 ### ***Enterprise Service Bus (ESB)***
 
-With ambition of connecting AB systems together, this project aims to build a transit station of
-data which helps outsourcing AB operations to 3rd companies easier.
+With ambition of connecting AB systems together, this project aimed to build a transit station. It also helped outsource
+operations more easily.
 
-My responsibilities in this project were:
+My responsibilities:
 
-* Write web services using gSOAP, CGI, APACHE, C++.
-* Work with MSSQL by designing tables, procedures / triggers.
-* Develop scripts, modules using Pentaho Data Integration and to migrate / transfer data among
-  applications).
+* Wrote web services using gSOAP, CGI, APACHE, C++.
+* Worked with MSSQL by designing tables, procedures / triggers.
+* Developed scripts, modules using Pentaho Data Integration and to migrate / transfer data among applications).
 
 ## **Jul 2008 - Apr 2010**
 
@@ -92,16 +103,26 @@ Vietnam (TSDV)
 
 ### ***TOSCANA (TOshiba Source Code ANAlyzing system)***
 
-The team is in charge of building a Ruby on Rails application to bring customers various kinds
-reports by measuring source codes. It can also work as a task management tool.
+The team were dedicated to build a Ruby on Rails application to bring customers various kinds reports by measuring
+source codes. It could also be used as a task management for developers.
 
-It was my very first time of analyzing requirements, and providing some kinds of documents such as
-detailed design documents.
+My responsibilities:
+
+* Analyzed requirements and wrote some documents such as detailed design
+* Wrote application code, unit & integration tests
 
 ### ***SQLite Enhancements***
 
-This project targets in adding specific features into SQLite, such as: Hash Join, Row Locking,
-File-based Table... by creating a customized version.
+This project targeted in created a customized version of SQLite by adding specific features into SQLite, such as: Hash
+Join, Row Locking,
+File-based Table...
 
-Joining this project brought me basic knowledge of theories of database management systems, and
-chances to apply deadlock, buffer algorithms in the real life.
+My responsibilities:
+
+* Investigated theories of relational database management system to understand how SQLite organized its data structure
+  and executed queries
+* Provided ideas of algorithms. Eg: buffering, memory management...
+
+## Education
+
+- B.S. in Computer Engineering Hanoi University of Science and Technology in 2008
