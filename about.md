@@ -12,9 +12,8 @@ Experienced software developer / architect in IT industry with a strong ability
 in analyzing issues and providing appropriate solutions.
 
 Graduated with a B.S. in Computer Engineering from Hanoi University of Science and Technology.
-Proficient in Java, C++, Spring, Maven, and various database technologies.
-Solid foundation in microservices, performance
-optimization, and scalability.
+Proficient in Java, C++, Spring, Maven, and various database technologies. Solid foundation in microservices,
+performance optimization, and scalability.
 
 # Personal Info
 
@@ -39,9 +38,12 @@ Worked as a solution architect in LKO - A startup with eLearning products.
 A group of systems supported teaching operations.
 
 My responsibilities:
-* Led the team to build this system from scratch by applying Spring Cloud Microservices architecture.
-* Collaborated with BAs/stakeholders to define requirements, provide solutions, and provide them into manageable tasks
+
+* Led the team to build this system from scratch by applying Spring Cloud Microservices architecture and ReactJs.
+* Collaborated with BAs/stakeholders to make requirements clear, provide solutions, and divide them into manageable
+  tasks
 * Analyzed logs, reports to identify and solve technical debts.
+* Wrote modules of chatting, controlling classes, scheduling learning sessions...
 
 ## **Apr 2018 - Jun 2020**
 
