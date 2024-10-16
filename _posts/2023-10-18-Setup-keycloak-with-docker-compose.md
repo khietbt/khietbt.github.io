@@ -5,7 +5,7 @@ date: 2023-10-18 11:43:01 +0700
 categories: keycloak docker docker-compose
 ---
 
-In my opinion, docker-compose is the best way to setup local environment, and a keycloak can be run
+In my opinion, docker-compose is the best way to setup a local environment, and a keycloak can be run
 with minimal effort like this:
 
 ```yaml
@@ -34,6 +34,3 @@ services:
     depends_on:
       - postgres
 ```
-
-Please take a look at [sesame-keycloak-service](git@github.com:khietbt/sesame-keycloak-service.git)
-which is ready to run with sample realms.
