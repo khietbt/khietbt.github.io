@@ -1,21 +1,21 @@
 ---
 layout: post
 title: "Axon and Spring Security Integration"
-date: 2023-12-05 11:43:01 +0700
+date: 2024-10-05 11:43:01 +0700
 categories: Axon Spring
 ---
 
 # Axon Framework
 
-(Axon Framework)[https://axoniq.io/] provides a simple but powerful solution of building an event-driven application. It
-can work with Spring perfectly. To integrate with Spring Security, we need 2 steps:
+[Axon Framework](https://axoniq.io) provides a simple but powerful way to build an event-driven application. It can work
+with Spring perfectly. To integrate with Spring Security, we need 2 steps:
 
-1. Create a MessageDispatchInterceptor to embed the jwt along with the message as a metadata
+1. Create a dispatch interceptor to embed the jwt along with the message as a metadata
 2. Create a handler interceptor to extract jwt from the message's metadata and convert it to an authentication
 
 # Create a dispatch interceptor
 
-Here, the jwt is extracted from SecurityContextHolder.
+Here, the jwt is extracted from SecurityContextHolder, and sent along with the message:
 
 ```java
 
@@ -48,7 +48,7 @@ public class AxonMessageDispatchInterceptor implements MessageDispatchIntercepto
 
 # Create a handler interceptor
 
-Setup a security context using the metadata:
+The security context is restored by reading the metadata:
 
 ```java
 
