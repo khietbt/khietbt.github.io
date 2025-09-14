@@ -1,10 +1,8 @@
 ---
 title: Getting Started
 date: 2025-09-13 06:39:30 +0700
-categories: [jekyll, blog]
-tags: [jekyll, chirpy]
+categories: [jekyll]
+tags: [jekyll]
 ---
 
-## Getting started
-
-It is time for writing some small things.
+It is time for record some small things with [Jekyll](https://jekyllrb.com/).
