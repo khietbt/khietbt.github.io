@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title: Keycloak in Docker
 description: Getting Started with Keycloak
@@ -10,7 +11,10 @@ tags:
   - keycloak
   - docker
 ---
-[Docker](https://www.keycloak.org/getting-started/getting-started-docker) is the best way to work with [Keycloak](www.keycloak.org) - a popular open-source identity manager.
+
+[Docker](https://www.keycloak.org/getting-started/getting-started-docker) is the
+best way to work with [Keycloak](www.keycloak.org) - a popular open-source
+identity manager.
 
 ## Preparing a Database
 
@@ -24,7 +28,7 @@ services:
     image: mysql:latest
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_0900_ai_ci
     env_file:
-        - ./environments/env.local
+      - ./environments/env.local
     ports:
       - "3306:3306"
     volumes:
@@ -34,30 +38,29 @@ services:
     restart: unless-stopped
 ```
 
-**Notes:** 
+**Notes:**
 
 1. `./environments/env.local` contains some variables:
 
-```bash
-#!/usr/bin/env bash
+   ```properties
+   MYSQL_ROOT_PASSWORD=root
+   MYSQL_ALLOW_EMPTY_PASSWORD=no
+   ```
 
-MYSQL_ROOT_PASSWORD=root
-MYSQL_ALLOW_EMPTY_PASSWORD=no
-```
+2. `/docker-entrypoint-initdb.d` contains scripts initializing db & accounts.
 
-2. `/docker-entrypoint-initdb.d` contains scripts inializing db & accounts.
+   ```sql
+   CREATE DATABASE `keycloak-service-db`;
 
-```sql
-CREATE DATABASE `keycloak-service-db`;
+   CREATE USER 'keycloak-service-db-username'@'%' IDENTIFIED BY 'keycloak-service-db-password';
 
-CREATE USER 'keycloak-service-db-username'@'%' IDENTIFIED BY 'keycloak-service-db-password';
-
-GRANT ALL PRIVILEGES ON `keycloak-service-db`.* TO 'keycloak-service-db-username'@'%';
-```
+   GRANT ALL PRIVILEGES ON `keycloak-service-db`.* TO 'keycloak-service-db-username'@'%';
+   ```
 
 ## Importing Realms into Keycloak
 
-Please refer https://www.keycloak.org/server/importExport for importing / exporting realms.
+Please refer <https://www.keycloak.org/server/importExport> for importing
+/ exporting realms.
 
 After exporting data, a docker file is needed to start the keycloak service:
 
@@ -81,25 +84,28 @@ services:
 
 **Notes:**
 
-1. Environment Variables:
+1. Environment Variables in `./environments/env.local`:
 
-```bash
-#!/usr/bin/env bash
+   ```properties
+   KC_HOSTNAME=host.docker.internal
+   KC_HTTP_PORT=8080
+   KC_HOSTNAME_STRICT_BACKCHANNEL=false
+   KC_HTTP_ENABLED=true
+   KC_HOSTNAME_STRICT_HTTPS=false
+   KC_HEALTH_ENABLED=true
+   KEYCLOAK_ADMIN=admin
+   KEYCLOAK_ADMIN_PASSWORD=admin
+   KC_DB=mysql
+   KC_DB_URL=jdbc:mysql://host.docker.internal/keycloak-service-db
+   KC_DB_USERNAME=keycloak-service-db-username
+   KC_DB_PASSWORD=keycloak-service-db-password
+   ```
 
-KC_HOSTNAME=host.docker.internal
-KC_HTTP_PORT=8080
-KC_HOSTNAME_STRICT_BACKCHANNEL=false
-KC_HTTP_ENABLED=true
-KC_HOSTNAME_STRICT_HTTPS=false
-KC_HEALTH_ENABLED=true
-KEYCLOAK_ADMIN=admin
-KEYCLOAK_ADMIN_PASSWORD=admin
-KC_DB=mysql
-KC_DB_URL=jdbc:mysql://host.docker.internal/keycloak-service-db
-KC_DB_USERNAME=keycloak-service-db-username
-KC_DB_PASSWORD=keycloak-service-db-password
-```
+2. `./realms` contains preset data:
 
-2. `./realms` contains preset data
+   Keycloak should be ready at <http://localhost:8080> after starting with
+   docker compose.
 
-Keycloak should be ready at http://localhost:8080 after starting with docker compose.
+   ```bash
+   docker compose up -d
+   ```
