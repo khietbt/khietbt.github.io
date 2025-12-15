@@ -13,7 +13,7 @@ tags:
 ---
 
 [Docker](https://www.keycloak.org/getting-started/getting-started-docker) is the
-best way to work with [Keycloak](www.keycloak.org) - a popular open-source
+best way to work with [Keycloak](https://www.keycloak.org) - a popular open-source
 identity manager.
 
 ## Preparing a Database
@@ -40,22 +40,22 @@ services:
 
 **Notes:**
 
-1. `./environments/env.local` contains some variables:
+- `./environments/env.local` contains some variables:
 
-   ```properties
-   MYSQL_ROOT_PASSWORD=root
-   MYSQL_ALLOW_EMPTY_PASSWORD=no
-   ```
+```properties
+MYSQL_ROOT_PASSWORD=root
+MYSQL_ALLOW_EMPTY_PASSWORD=no
+```
 
-2. `/docker-entrypoint-initdb.d` contains scripts initializing db & accounts.
+- `/docker-entrypoint-initdb.d` contains scripts initializing db & accounts.
 
-   ```sql
-   CREATE DATABASE `keycloak-service-db`;
+```sql
+CREATE DATABASE `keycloak-service-db`;
 
-   CREATE USER 'keycloak-service-db-username'@'%' IDENTIFIED BY 'keycloak-service-db-password';
+CREATE USER 'keycloak-service-db-username'@'%' IDENTIFIED BY 'keycloak-service-db-password';
 
-   GRANT ALL PRIVILEGES ON `keycloak-service-db`.* TO 'keycloak-service-db-username'@'%';
-   ```
+GRANT ALL PRIVILEGES ON `keycloak-service-db`.* TO 'keycloak-service-db-username'@'%';
+```
 
 ## Importing Realms into Keycloak
 
@@ -84,28 +84,34 @@ services:
 
 **Notes:**
 
-1. Environment Variables in `./environments/env.local`:
+- Environment Variables in `./environments/env.local`:
 
-   ```properties
-   KC_HOSTNAME=host.docker.internal
-   KC_HTTP_PORT=8080
-   KC_HOSTNAME_STRICT_BACKCHANNEL=false
-   KC_HTTP_ENABLED=true
-   KC_HOSTNAME_STRICT_HTTPS=false
-   KC_HEALTH_ENABLED=true
-   KEYCLOAK_ADMIN=admin
-   KEYCLOAK_ADMIN_PASSWORD=admin
-   KC_DB=mysql
-   KC_DB_URL=jdbc:mysql://host.docker.internal/keycloak-service-db
-   KC_DB_USERNAME=keycloak-service-db-username
-   KC_DB_PASSWORD=keycloak-service-db-password
-   ```
+```properties
+KC_HOSTNAME=host.docker.internal
+KC_HTTP_PORT=8080
+KC_HOSTNAME_STRICT_BACKCHANNEL=false
+KC_HTTP_ENABLED=true
+KC_HOSTNAME_STRICT_HTTPS=false
+KC_HEALTH_ENABLED=true
+KEYCLOAK_ADMIN=admin
+KEYCLOAK_ADMIN_PASSWORD=admin
+KC_DB=mysql
+KC_DB_URL=jdbc:mysql://host.docker.internal/keycloak-service-db
+KC_DB_USERNAME=keycloak-service-db-username
+KC_DB_PASSWORD=keycloak-service-db-password
+```
 
-2. `./realms` contains preset data:
+- `./realms` contains preset data:
 
-   Keycloak should be ready at <http://localhost:8080> after starting with
-   docker compose.
+Keycloak should be ready at <http://localhost:8080> after starting with docker
+compose.
 
-   ```bash
-   docker compose up -d
-   ```
+```bash
+docker compose up -d
+```
+
+## Repository
+
+```bash
+git clone git@github.com:khietbt/keycloak-with-docker-compose.git
+```
